@@ -1,0 +1,24 @@
+<div class="list"><!-- 
+    <p ng-if="message.error!=null">{{message.error}}</p>
+    <p ng-if="message.success!=null">{{message.success}}</p> -->
+    <label align="center">
+        <h1>Login</h1>
+    </label>
+    <form name="loginForm" novalidate>
+        <label class="item item-input">
+            <input type="text" placeholder="Username" ng-model="user.email" required>
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="Password" ng-model="user.password" required>
+        </label>
+        <br>
+        <div class="button-bar">
+            <button class="button button-positive" ng-disabled="loginForm.$invalid" ng-click="loginUser()">
+                Login
+            </button>
+            <a class="button button-assertive" href="#/register">
+                Register
+            </a>
+        </div>
+    </form>
+</div>

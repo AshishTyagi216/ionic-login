@@ -1,0 +1,25 @@
+<div class="list">
+    <label align="center">
+        <h1>Register</h1>
+    </label>
+    <form name="registerForm">
+        <label class="item item-input">
+            <input type="text" placeholder="Username" ng-model="user.username">
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="Password" ng-model="user.password">
+        </label>
+        <label class="item item-input">
+            <input type="email" placeholder="Email" ng-model="user.email">
+        </label>
+        <br>
+        <div class="button-bar">
+            <a class="button button-calm" href="#/login">
+                Cancel
+            </a>
+            <button class="button button-assertive" ng-click="register()">
+                Register
+            </button>
+        </div>
+    </form>
+</div>
